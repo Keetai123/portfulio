@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  background: url('/NEW/img/car-bg.jpg') no-repeat center center/cover;
+  background: url('/NEW/img/car.bg.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
