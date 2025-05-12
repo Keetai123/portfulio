@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sriracha', cursive, 'Oswald', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background: url('/NEW/img/car-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+#name {
+  font-family: 'Underdog', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.btn {
+  margin-top: 25px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #5e5c5c4b;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #7a7a7a;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about, .skills, .projects, .interests {
+  background-color: #dddddd;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+.project-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 30px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* CSS สำหรับการแสดงข้อมูลเพิ่มเติม */
+#moreAbout {
+  margin-top: 20px;
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#moreAbout.show {
+  display: block;
+  opacity: 1;
+  max-height: 1000px;
+}
+
+.underdog-regular {
+  font-family: 'Underdog', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-content {
+  margin-top: 20px;
+  display: none;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease-in-out;
+}
+
+.project-content.show {
+  display: block;
+  opacity: 1;
+  max-height: 500px;
+}
+
+/* สไตล์สำหรับ Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* ฉากหลังที่มืด */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+/* สไตล์สำหรับรูปภาพใน Modal */
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+}
+
+/* สไตล์สำหรับปุ่มปิด */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* เพิ่มสไตล์อื่น ๆ ตามที่มีในโค้ดเดิม */
+.project-image {
+  width: 100%;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ผลงานของผม</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="new.js" defer></script>
+  <style>
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    #quote {
+      margin-top: 30px;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+
+      /* สายรุ้งสวยๆ */
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      animation: rainbow 5s linear infinite;
+      background-size: 400%;
+    }
+
+    @keyframes rainbow {
+      0% { background-position: 0% }
+      100% { background-position: 100% }
+    }
+  </style>
+</head>
+<body>
+  <section class="about">
+    <h2>คำคมของผม</h2>
+
+    <!-- ปุ่มโชว์คำคม -->
+    <button class="btn" id="showQuoteBtn">กดเพื่อดูคำคม</button>
+
+    <!-- ตรงนี้จะแสดงคำคม -->
+    <p id="quote"></p>
+
+    <!-- ปุ่มกลับ -->
+    <a href="index.html" class="btn">กลับหน้าแรก</a>
+  </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- เพิ่มฟอนต์จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sriracha&family=Underdog&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay">
+        <h1 id="name" class="underdog-regular">SILA PURARUK</h1>
+        <p class="underdog-regular">Welcome to my portfolio.</p>
+        <a href="#about" class="btn" id="scrollBtn">เลื่อนลง</a>
+        <a href="work.html" class="btn work-btn">ดูคำคมบาดใจ</a>
+      </div>
+    </section>
+
+    <!-- เกี่ยวกับฉัน -->
+    <section class="about" id="about">
+      <h2 class="underdog-regular">เกี่ยวกับฉัน</h2>
+      <button class="btn" id="toggleAbout">ดูเพิ่มเติม</button>
+      <div id="moreAbout" class="more-about">
+        <p class="underdog-regular">
+          <p>สวัสดีครับผม ชื่อศิลา ปุรารักษ์ หรือเพื่อนๆ เรียกผมว่า "คีไท </p>
+          <p>ผมเกิดและโตที่จังหวัดเชียงใหม่ เป็นคนที่ชอบถ่ายรูปมากๆๆ(เป็นตากล้องของสภาโรงเรียนวัฒโน)ชอบถ่ายรูปรถมากๆด้วยครับ แถมชอบเรื่องเกี่ยวกับรถด้วย</p>
+          <p>ผมมีความสนใจในด้านเทคโนโลยีและการพัฒนาเว็บไซต์ รวมไปถึงการทำงานด้าน Data Science ที่เป็นสิ่งที่ผมตั้งใจจะทำในอนาคตครับ</p>
+          <p>ผมเชื่อว่าการทำงานร่วมกับผู้อื่นและการแบ่งปันความรู้เป็นสิ่งที่สำคัญและทำให้เรามีความสุขในการเติบโตไปพร้อมๆ กันครับ</p>
+
+      </div>
+    </section>
+
+    <!-- ทักษะ -->
+    <section class="skills" id="skills">
+      <h2 class="underdog-regular">ทักษะของฉัน</h2>
+      <ul>
+        <li class="underdog-regular">HTML / CSS / JavaScript / Python / C</li>
+        <li class="underdog-regular">Sketchup</li>
+        <li class="underdog-regular">Graphic Design</li>
+        <li class="underdog-regular">Photoshop / Canva</li>
+        <li class="underdog-regular">construct 2 / Unreal Engine</li>
+      </ul>
+    </section>
+
+    <!-- โปรเจกต์ตัวอย่าง -->
+    <section class="projects" id="projects">
+      <h2>ตัวอย่างผลงาน</h2>
+      <div class="project-boxes">
+        <div class="project">
+          
+          <h3>PHOTO </h3>
+          <button class="btn" id="toggleProjectA">ดูรายละเอียด</button>
+          <div id="projectAContent" class="project-content">
+            <p>รายละเอียดของ Project A...</p>
+            <img src="/NEW/img/IMG_9097.JPG" alt="Project A Image" class="project-image" />
+            <img src="/NEW/img/50C8F5F6-92E2-402B-96CC-C17BF3CCB84B.jpg" alt="Project A Image" class="project-image" />
+            <img src="/NEW/img/A9EEF3D9-B146-4827-97DC-7C2524B84F64.jpg" alt="Project A Image" class="project-image" />
+          </div>
+        </div>
+        <div class="project">
+          
+          <h3>สิ่งที่เคยทำ</h3>
+          <button class="btn" id="toggleProjectB">ดูรายละเอียด</button>
+          <div id="projectBContent" class="project-content">
+            <p>รายละเอียดของ Project B...</p>
+            <img src="/NEW/img/Green and Yellow Sporty Football Score Instagram Post.png" alt="Project A Image" class="project-image" />
+            <img src="/NEW/img/Screenshot 2025-04-07 175652.png" alt="Project A Image" class="project-image" />
+            <img src="/NEW/img/Screenshot 2025-04-07 180218.png" alt="Project A Image" class="project-image" />
+          </div>
+        </div>
+        <div class="project">
+          <h3>ด้านกีฬา</h3>
+          <button class="btn" id="toggleProjectC">ดูรายละเอียด</button>
+          <div id="projectCContent" class="project-content">
+            <p>รายละเอียดของ Project C...</p>
+            <img src="/NEW/img/Screenshot 2025-04-07 180541.png" alt="Project A Image" class="project-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal สำหรับแสดงรูปภาพขนาดใหญ่ -->
+    <div id="imageModal" class="modal">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modalImage" class="modal-content" />
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p class="underdog-regular">ติดต่อ: silapuraruk1@email.com | โทร: 096-897-5913</p>
+      <p class="underdog-regular">© 2025 พอร์ตโฟลิโอโดย ศิลา ปุรารักษ์</p>
+    </footer>
+
+    <script src="new.js"></script>
+  </body>
+</html>
